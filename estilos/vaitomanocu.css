@@ -82,18 +82,22 @@ div#formulario>h1 {
     border-radius: 8px;
     margin-bottom: 5px;
     position: relative;
-
+    display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   width: 100%;
 }
 
+
 .input-icon {
-    width: 20px;
-    height: 20px;
+   width: 20px;
+   height: 20px;
 
 }
 
 #iemail,
 #isenha {
-    background-color: #49a09d;
+    background-color: #9ee0df;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid transparent;
@@ -103,8 +107,8 @@ div#formulario>h1 {
     bottom: -3px;
 }
 
-#iemail:active,
-#isenha:active {
+#iemail:focus,
+#isenha:focus {
     background-color: white;
 }
 
