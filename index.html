@@ -21,11 +21,30 @@
                 <p>Seja bem-vindo(a) novamente.Faça login para acessar sua conta e poder fazer as configurações no seu
                     ambiente</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <p>
-                        <label for="imail">@charset "UTF-8";
+                    <div class="input-group">
+                        <p>
+                            <label for="iemail"></label>
 
-</label>
-                        <input type="text" name="email" id="iemail">
+                            <img src="imagens/email.png" alt="icone-login" class="input-icon">
+                            <input type="email" name="email" id="iemail" required autocomplete="on" minlength="8"
+                                maxlength="30" placeholder="Seu E-mail" size="20">
+                        </p>
+                    </div>
+                    <div class="input-group">
+                        <p>
+                            <label for="isenha"></label>
+
+                            <img src="imagens/senha.png" alt="icone-senha" class="input-icon">
+                            <input type="password" name="senha" id="isenha" required autocomplete="on" minlength="5"
+                                maxlength="20" placeholder="Sua Senha" size="20">
+
+                        </p>
+                    </div>
+                    <p>
+                        <input type="submit" value="Entrar" id="ientrar">
+                        <input type="button" value="Esqueci a senha✉️" id="iesqueciasenha">
+
+
                     </p>
 
 
