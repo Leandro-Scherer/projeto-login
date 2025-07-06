@@ -15,7 +15,7 @@
         <section id="login">
             <div id="imagem"></div>
 
-
+            <!-- Imagem Aqui-->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -23,27 +23,28 @@
                     ambiente</p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="input-group">
-                        <p>
-                            <label for="iemail"></label>
-                            <img src="imagens/email.png" alt="icone-login" class="input-icon">
-                            <input type="email" name="email" id="iemail" required autocomplete="email" minlength="8"
-                                maxlength="30" placeholder="Seu E-mail" size="20">
-                        </p>
+
+                        <label for="iemail"></label>
+                        <span class="material-symbols-outlined input-icon">person</span>
+                        <input type="email" name="email" id="iemail" required placeholder="Seu e-mail" minlength="8"
+                            maxlength="30" size="20">
+
+
                     </div>
                     <div class="input-group">
-                        <p>
-                            <label for="isenha"></label>
 
-                            <img src="imagens/senha.png" alt="icone-senha" class="input-icon">
-                            <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="5"
-                                maxlength="20" placeholder="Sua Senha" size="20">
+                        <label for="isenha"></label>
+                        <span class="material-symbols-outlined input-icon">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required
+                            autocomplete="current-password" minlength="5" maxlength="20" size="20">
 
-                        </p>
+
                     </div>
-                    <p>
+
+                    <div class="botoes">
                         <input type="submit" value="Entrar" id="ientrar">
-                         <input type="submit" value="Esqueci a senha" id="iesqueciasenha">
-                    </p>
+                        <input type="submit" value="Esqueci a senha" id="iesqueciasenha">
+                    </div>
 
                 </form>
 

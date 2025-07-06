@@ -26,6 +26,7 @@ body {
     width: 100vw;
     background-color: #5f2c82;
     position: relative;
+    box-sizing: border-box;
 }
 
 section#login {
@@ -85,15 +86,15 @@ div#formulario>h1 {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    width: 100%;
+   width: 100%;
+}
+.input-group > span{
+    width: 40px;
+    font-size: 2em;
+    color: white ;
+    padding: 5px;
 }
 
-
-.input-icon {
-    width: 20px;
-    height: 20px;
-
-}
 
 #iemail,
 #isenha {
@@ -103,8 +104,7 @@ div#formulario>h1 {
     border: 1px solid transparent;
     margin-bottom: 5px;
     position: relative;
-    right: -12px;
-    bottom: -3px;
+  flex: 1;
 }
 
 #iemail:focus,
@@ -146,6 +146,9 @@ div#formulario>h1 {
 #iesqueciasenha:hover {
     background-color: #5dcac7;
 }
+.botoes{
+    flex-direction: column;
+}
 
 
 
@@ -173,6 +176,10 @@ div#formulario>h1 {
         width: 70%;
 
     }
+     #ientrar, #iesqueciasenha {
+        width: 100%;
+
+}
 
 }
 
@@ -212,4 +219,8 @@ div#formulario>h1 {
         font-size: 2em;
 
     }
+    #ientrar, #iesqueciasenha {
+        width: 100%;
+
+}
 }
